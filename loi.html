@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+  <title>Politique de Confidentialité</title>
+  <style>
+    /* Styles CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #00b894;
+    }
+    header h1 {
+      color: #00b894;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00cec9;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    main h2 {
+      color: #00b894;
+      margin-bottom: 10px;
+    }
+    main p {
+      margin-bottom: 15px;
+    }
+    .back-to-top {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #00b894;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .back-to-top:hover {
+      background: #00cec9;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #1e1e1e;
+      color: #ccc;
+      border-top: 3px solid #00b894;
+    }
+    footer a {
+      color: #00cec9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Politique de Confidentialité</h1>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <a href="#collecte">Données Collectées</a>
+      <a href="#utilisation">Utilisation des Données</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Bienvenue sur notre site d'apprentissage de la programmation et du hacking. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles.</p>
+    </section>
+    <section id="collecte">
+      <h2>Données Collectées</h2>
+      <p>Nous collectons des données pour améliorer nos services, notamment :</p>
+      <ul>
+        <li>Votre adresse email lors de l'inscription.</li>
+        <li>Vos préférences d'apprentissage.</li>
+        <li>Des informations techniques sur votre appareil.</li>
+      </ul>
+    </section>
+    <section id="utilisation">
+      <h2>Utilisation des Données</h2>
+      <p>Vos données sont utilisées uniquement pour :</p>
+      <ul>
+        <li>Personnaliser votre expérience d'apprentissage.</li>
+        <li>Envoyer des notifications importantes.</li>
+        <li>Analyser les performances de notre plateforme.</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour toute question concernant cette politique de confidentialité, contactez-nous à <a href="mailto:contact@programming-hacking.com">contact@programming-hacking.com</a>.</p>
+    </section>
+    <a href="#top" class="back-to-top">Retour en haut</a>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Site d'apprentissage de la programmation et du hacking | <a href="menu.html">Mentions légales</a></p>
+  </footer>
+  <script>
+    // JavaScript pour une animation ou un effet futur
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.querySelector(event.target.getAttribute('href'));
+        window.scrollTo({
+          top: target.offsetTop - 50,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

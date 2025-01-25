@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos du site - VENDER</title>
+  <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+  <style>
+    /* Reset et Style Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #title h1 {
+      color: #007BFF;
+      font-size: 24px;
+      font-style: italic;
+      font-family: Verdana, Geneva, Arial, sans-serif;
+      margin: 0;
+    }
+
+    #title h1:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    header n {
+      font-size: 20px;
+      color: #555;
+      margin-left: 20px;
+    }
+
+    header img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+    }
+
+    /* Contenu Principal */
+    main {
+      margin-top: 100px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* Images */
+    .images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header n {
+        font-size: 16px;
+      }
+
+      #title h1 {
+        font-size: 20px;
+      }
+
+      main h2 {
+        font-size: 18px;
+      }
+
+      main p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="title">
+      <h1>VENDER</h1>
+    </div>
+    <n>INFORMATIQUE & SCIENCE</n>
+    <img src="image/logo.jpg" alt="Logo VENDER">
+  </header>
+
+  <main>
+    <p><b><h2>Ce site a été créé pour explorer davantage la technologie et la science.</h2></b></p>
+    <h2>La science couvre les mathématiques, la physique et la chimie, avec des résumés allant de la 6ème à la terminale, ainsi que des liens vers des pages détaillées.</h2>
+    <h2>Concernant la technologie, le site propose un apprentissage global sur la programmation et le hacking.</h2>
+    <h2>Des cours explicatifs sont disponibles pour 9 langages de programmation parmi les plus connus, accompagnés de liens détaillés.</h2>
+    <h2>Pour le hacking, vous trouverez des explications claires et des liens vers des canaux d'apprentissage approfondis.</h2>
+    <h2>Nous espérons que vous découvrirez beaucoup grâce à ce site. Bonne exploration !</h2>
+
+    <div class="images">
+      <img src="image/logo.jpg" alt="Logo VENDER">
+      <img src="image/ordi.jpg" alt="Image Ordinateur">
+    </div>
+  </main>
+</body>
+</html>

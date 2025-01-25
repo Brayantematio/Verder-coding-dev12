@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ruby code - VENDER</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <style>
+        body{
+        background:rgba(0, 0, 0, 0.157);
+        }
+        code{
+          font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+   <code>
+    <br>
+    <br>
+require 'sinatra'
+<br>
+<br>
+
+# Route pour la page d'accueil
+<br>
+<br>
+get '/' do
+  'Bienvenue sur mon site !'
+end
+<br>
+# Route pour une page de présentation d'un utilisateur
+<br>
+<br>
+get '/utilisateur/:id' do
+  "Voici la page de l'utilisateur #{params[:id]} !"
+end
+</code>
+<br>
+<br>
+<i><em>Cet exemple utilise le framework Sinatra pour créer un serveur web avec deux routes : une pour la page d'accueil, qui renvoie simplement un message de bienvenue, et une pour une page de présentation d'un utilisateur, qui affiche l'identifiant de l'utilisateur passé en paramètre dans l'URL. Pour exécuter cette application, vous pouvez l'enregistrer dans un fichier nommé `app.rb` et exécuter la commande `ruby app.rb`. Ensuite, vous pouvez accéder à l'application à l'URL `http://localhost:4567/` pour la page d'accueil et à l'URL `http://localhost:4567/utilisateur/1` (par exemple) pour la page de présentation de l'utilisateur 1.</em></i>
+
+</body>
+</html>

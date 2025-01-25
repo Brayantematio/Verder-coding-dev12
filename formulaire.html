@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE-VENDER</title>
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>INFORMATIQUE & SCIENCE</h1>
+        <img src="image/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="form-container">
+        <h2>Formulaire Vender</h2>
+        <form onsubmit="afficherContenu(event)">
+            <div style="position: relative;">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="nom" placeholder="Nom" maxlength="15" required>
+            </div>
+            <div style="position: relative;">
+                <select id="pays" required>
+                    <option value="" disabled selected>🌐 Choisir un pays</option>
+                    <option value="33">France</option>
+                    <option value="237">Cameroun</option>
+                    <option value="44">Angleterre</option>
+                    <option value="1">États-Unis</option>
+                    <option value="81">Japon</option>
+                </select>
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-phone icon"></i>
+                <input type="tel" id="numero" placeholder="Numéro de téléphone" maxlength="20" required>
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="email" placeholder="E-mail" maxlength="25" required>
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="motdepasse" placeholder="Mot de passe" maxlength="15" required>
+                <i class="fas fa-eye toggle-password" id="toggleMotdepasse"></i>
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="confirmmotdepasse" placeholder="Confirmer le mot de passe" maxlength="15" required>
+                <i class="fas fa-eye toggle-password" id="toggleConfirmMotdepasse"></i>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+<srcipt src="affichage.js"></srcipt>
+  
+        <script>
+    // Fonction pour basculer l'affichage du mot de passe
+    function togglePasswordVisibility(inputId, toggleId) {
+        const input = document.getElementById(inputId);
+        const toggleIcon = document.getElementById(toggleId);
+        toggleIcon.addEventListener('click', () => {
+            if (input.type === 'password') {
+                input.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        });
+    }
+
+    // Appliquer la fonction sur les champs de mot de passe
+    togglePasswordVisibility('motdepasse', 'toggleMotdepasse');
+    togglePasswordVisibility('confirmmotdepasse', 'toggleConfirmMotdepasse');
+
+    // Fonction pour afficher et enregistrer les données dans le localStorage
+    function afficherContenu(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+
+        // Récupération des données
+        const nom = document.getElementById('nom').value.trim();
+        const pays = document.getElementById('pays').value;
+        const numero = document.getElementById('numero').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const motdepasse = document.getElementById('motdepasse').value;
+        const confirmMotdepasse = document.getElementById('confirmmotdepasse').value;
+
+        // Validation des données
+        if (nom.length > 15) {
+            alert("Le nom ne doit pas dépasser 15 caractères.");
+            return;
+        }
+
+        if (numero.length > 20) {
+            alert("Le numéro de téléphone ne doit pas dépasser 20 caractères.");
+            return;
+        }
+
+        if (email.length > 25) {
+            alert("L'e-mail ne doit pas dépasser 25 caractères.");
+            return;
+        }
+
+        if (motdepasse !== confirmMotdepasse) {
+            alert("Les mots de passe ne correspondent pas.");
+            return;
+        }
+
+        if (motdepasse.length > 15) {
+            alert("Le mot de passe ne doit pas dépasser 15 caractères.");
+            return;
+        }
+
+        // Création de l'objet utilisateur
+        const utilisateur = {
+            nom,
+            pays,
+            numero,
+            email,
+            motdepasse
+        };
+
+        // Enregistrement dans le localStorage
+        localStorage.setItem('utilisateur', JSON.stringify(utilisateur));
+
+        // Confirmation à l'utilisateur
+        alert("Vos informations ont été enregistrées avec succès !");
+        window.location.href="menu.html"
+    }
+</script>
+    </script>
+</body>
+</html>

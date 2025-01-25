@@ -1,0 +1,96 @@
+
+<link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+<code>
+< php<br>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<br>
+    $nom = $_POST["nom"];
+    <br>
+    $prenom = $_POST["prenom"];
+    <br>
+    $email = $_POST["email"];
+   <br>
+    $telephone = $_POST["telephone"];
+    <br>
+    $DePasse = $_POST["motDePasse"];
+<br>
+    // Validation des champs, si nécessaire
+<br>
+    // Création d'un compte utilisateur
+    <br>
+    $compte = [
+ "nom" => $nom,
+ <br>
+        "prenom" => $prenom,
+        <br>
+        "email" => $email,
+        <br>
+        "telephone" => $telephone,
+        <br>
+        "motDePasse => $motDePasse
+    ];
+
+<br>
+    // Affichage du contenu
+    <br>
+    echo "Le monde est notre pleine";
+    <br>
+}
+?>
+</code>
+  
+   
+   <br>
+    <h2>Créer un compte utilisateur</h2>
+    <br>
+   <code>
+    < form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <br>
+    
+        < label for="nom">Nom :</label>
+        <br>
+        < input type="text" id="nom" name="nom" required>
+        <br><br>
+        
+        < label for="prenom">Prénom :</label>
+        <br>
+        < input typetext" id="prenom" name="prenom">
+        <br><br>
+        
+        < label for="email">Adresse email :</label>
+        <br>
+        < input type="email" id="email" name="email" required><br>
+        <br>
+        
+        < label for="telephone">Numéro de téléphone :</label>
+        <br>
+        < input type="tel" id="telephone" name="telephone" required>
+        <br><br >       
+        < label for="motDePasse">Mot de passe :</label>
+        <br>
+        < input type="password" id="motDePasse" namemotDePasse" required>
+        <br><br>
+        
+        < input type="submit" value="Connexion">
+    </ form>
+</code>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>php code - VENDER</title>
+    
+</head>
+<style>
+    body{
+        background:rgba(0, 0, 0, 0.157);
+        }
+        code{
+          font-size: 17px;
+        }
+</style>
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+<body>
+   <b>n'oubliez pas que input et  label sont des balises</b> 
+</body>
+</html>

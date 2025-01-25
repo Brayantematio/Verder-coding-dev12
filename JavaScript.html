@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript code - VENDER </title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <style>
+        body{
+        background:rgba(0, 0, 0, 0.157);
+        }
+        code{
+          font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    javascript
+    <br>
+    <br>
+    <code>
+// Créer un canvas
+<br>
+<br>
+let canvas = document.createElement("canvas");
+<br>
+<br>
+let ctx = canvas.getContext("2d");
+canvas.width = 800;
+canvas.height = 600;
+document.body.appendChild(canvas);
+<br>
+<br>
+
+// Charger les images des voitures
+<br>
+<br>
+let car1 = new Image();
+car1.src = "car1.png";
+let car2 = new Image();
+car2.src = "car2.png";
+<br>
+<br>
+
+// Définir les positions des voitures
+<br>
+<br>
+let car1X = 100;
+let car2X = 500;
+<br>
+<br>
+
+// Fonction pour dessiner les voitures sur le canvas
+<br>
+<br>
+function drawCars() {
+<br>
+<br>
+  ctx.drawImage(car1, car1X, 100, 50, 100);
+  <br>
+  <br>
+  ctx.drawImage(car2, car2X, 400, 50, 100);
+  <br>
+}
+<br>
+<br>
+
+// Fonction pour mettre à jour la position des voitures
+<br>
+<br>
+function updateCars() {
+<br>
+<br>
+  car1X += Math.random() * 5; 
+  <br>
+  <br>
+  // Mouvement aléatoire
+  <br>
+  <br>
+  car2X += Math.random() * 5;
+  <br>
+  <br>
+   // Mouvement aléatoire
+   <br>
+   <br>
+}
+<br>
+<br>
+
+// Fonction principale pour dessiner et mettre à jour le jeu
+<br>
+<br>
+function mainLoop() {
+<br>
+<br>
+  ctx.clearRect(0, 0, canvas.width, canvas.height); 
+  <br>
+  <br>
+  // Effacer le canvas
+  <br>
+  drawCars();
+  <br>
+  <br>
+   // Dessiner les voiture
+   <br>
+  updateCars(); 
+  <br>
+  <br>
+  // Mettre à jour la position des voiture<br>
+}
+<br>
+<br>
+
+// Boucle principale du jeu (appelée toutes les 10 millisecondes)
+setInterval(mainLoop, 10);
+</code>
+<br>
+<br>
+Ce code crée un canvas dans la page web et charge deux images de voitures. Les positions des voitures sont définies dans des variables, et une fonction `drawCars()` est utilisée pour dessiner les voitures sur le canvas. Une fonction `updateCars()` est également définie pour mettre à jour la position des voitures à chaque itération de la boucle principale du jeu. Finalement, une boucle principale est mise en place pour appeler les fonctions `drawCars()` et `updateCars()` toutes les 10 millisecondes afin de créer l'illusion de mouvement des voitures. Bien sûr, ce n'est qu'un exemple très simple et il y a beaucoup de choses que vous pouvez ajouter pour rendre le jeu plus intéressant !</i></p>
+</body>
+</html>
