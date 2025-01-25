@@ -1,0 +1,421 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body
+    {
+        background: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        zoom:34%;
+       
+    }
+    .contain div{
+        height: 5px;
+        width: 30px;
+        background-color: black;
+        margin: 5px;   
+        position: relative;
+        top: 15px;
+        left: 12px;        
+    }
+i{
+    color: red; 
+    font-size: 72px;
+}
+h1{
+    color: blue;
+    font-size:25px;
+    font-style: italic;
+    font-family: verdana, geneva, arial, sans serif;
+    position:relative;
+    left:10%;
+    top: -60px;
+    text-decoration: none;
+    font-weight:bold ;
+}
+h1:hover{
+color: rgba(0, 0, 0, 0.568);
+}
+.navbar{
+    font-family:verdana, geneva, arial, sans serif;
+    position:absolute;
+    top:18%;
+    left:65%;
+}
+a{
+    font-size:15px;
+    text-decoration: none;
+}
+j{
+font-size: 22px;
+position:absolute;
+left:30%;
+}
+.navbar a{
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    font-size:15px;
+}
+.lien{
+    height: 80px;
+}
+.navbar a:hover{
+  color: rgb(0, 98, 255);
+}
+section{
+    background-image: url('image/tele.jpg');
+    background-size:cover;
+    background-position:center ;
+    height:670px;
+    width:100%;
+    position:absolute;
+    top:4%;
+    left: -1%;
+}
+img{
+    width:420px;
+    position:absolute;
+    top:48%;
+    left:30%;
+    border-radius: 15px;
+}
+.paragraph_0{
+    text-align:center;
+    padding: 70px;
+    font-size:35px;
+    color: white;
+    position:absolute;
+    left:15%;
+}
+.paragraph_1{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-color:black;
+    width: 900px;
+    height: 90px;
+    position:absolute;
+    left:8%;
+    top: 30%;
+}
+.fa
+    {
+        color: #28a7e9;
+        font-size: 60px;
+    }
+    header{
+        position: fixed;
+        z-index: 99999;
+        background-color: write;
+        width: 72%;
+        height: 80px;      
+        left: 2px;
+        top: 0;
+        left: 2px;
+            }
+            .ordi{
+                position: relative;
+                top: 105px;
+                background-color: white;
+                width: 300px;
+                height: 310px;
+                left: 60px;
+                text-align: center;
+            }
+           
+        .span{
+            background-color: rgb(127, 165, 255);
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            border-radius: 40px;
+        }
+        .span i{
+        position: relative;
+        top: 10px;
+            
+        }
+        g{
+            position: relative;        
+                left: 60px;
+                top:-40px;
+
+        }
+        #ethyque{
+            left: -1%;
+                background-color:rgba(0, 0, 0, 0.027);
+                position: absolute;
+                top: 1114px;
+                width: 1100px;
+                height: 350px;
+            }
+            v{
+                position: absolute;
+                top: 110px;
+                left: 10%;
+            }
+          
+            #ethyque img{
+                position: absolute;
+                top: -60px;
+                left: 100%;
+                border-radius: 15px;
+            }
+            k{
+                font-size: 25px;
+            }
+            l{
+                font-size: 30px;
+                position: absolute;
+                top: -40px;
+            
+            }
+           
+        #planing{
+            left: -1%;
+            background-color:#fff;
+            position: absolute;
+            top: 1460px;
+            width: 100%;
+            height: 440px;
+        }
+        #planing img{
+            position: absolute;
+                top: 70px;
+                left: 8%;
+                height: 300px;
+        }
+        .prit{
+            background-color: rgb(127, 165, 255);
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            border-radius: 40px;
+        }
+        .prit i{
+            position: relative;
+        top: 10px;
+        }
+        h{
+            position: relative;        
+                left: 60px;
+                top:-40px;
+        }
+        .text{
+            position: relative;        
+                left: 450px;
+            top:-50px;
+        }     
+        
+        j{
+            position: relative;
+            top: -10px;
+        
+        }
+       
+        #OBJECTIF  img{
+            position: absolute;
+            top: 70px;
+            left: 55%;
+            border-radius: 20px;
+        }
+        #OBJECTIF {
+            left: -1%;
+            background-color:white;
+            position: absolute;
+            top: 720px;
+            width: 1100px;
+            height: 400px;
+        }
+        .text_2 h {
+            position: absolute;
+            top: 80px;
+        }
+        #OBJECTIF   h1{
+            position: absolute;
+            top: 15px;
+            left: 5%;
+        }
+        #OBJECTIF  button{
+            position: absolute;
+            top: 290px;
+            left: 6%;
+            height: 40px;
+            width: 180px;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(0, 0, 255, 0.616);
+            border: none;
+        }
+        #OBJECTIF  button:hover{
+            background-color: rgba(0, 60, 255, 0.979);
+        }
+      
+      
+        .text_3{
+            position: absolute;
+            top: 80px;
+            left: 5%;
+            color: white;
+        }
+        address{
+            position: absolute;
+            top: 160px;
+            left: 5%;
+            padding-top: 15px;
+            color: white;
+        }
+        .market{
+            height: 40px;
+            width: 40px;
+            background-color: rgba(0, 174, 255, 0.726);
+            border-radius: 20px;
+        }
+        .market i{
+            position: relative;
+            top: 10px;
+            left: 13px;
+        }
+        .add y{
+            position: relative;           
+            left: 60px;
+            top: -25px;
+            color: white;
+        }
+        .add v{
+            position: relative;           
+            left: 60px;
+            top: -28px;
+            color: white;
+        }
+        .add f{
+            position: relative;           
+            left: 60px;
+            top: -25px;
+            color: white;
+        }
+       #submit{
+        left: -1%;
+        background-color:rgba(0, 0, 0, 0.335);
+        position: absolute;
+        top: 1900px;
+        width: 1080px;
+        height: 480px;
+       
+       }
+       #submit v{
+        position: absolute;
+        left: 5%;
+        font-size: 20px;
+       }
+       #submit img{
+        position: absolute;
+        top: 40px;
+        left: 55%;
+        border-radius: 20px;
+       }
+       #submit  button{
+        position: absolute;
+        top: 290px;
+        left: 6%;
+        height: 40px;
+        width: 180px;
+        font-size: 20px;
+        color: white;
+        background-color: rgba(0, 0, 255, 0.616);
+        border: none;
+    }
+    #submit  button:hover{
+        background-color: rgba(0, 60, 255, 0.979);
+    }
+        #submit h1{
+            position: absolute;
+            top: 5px;
+            left: 5%;
+            font-size: 35px;
+            color: white;   
+        }
+        .footer{
+            left: -2%;
+            position: absolute;
+            top: 2250px;
+            width: 1070px;
+            height:565px;
+            background-image: url("image/font_footer.png");    
+            text-align: center;     
+        }
+        .footer b{
+            position: relative;           
+            top: 140px;
+            font-size:30px;
+            color:#b4b4b4;
+        }
+        #boite{
+            position:absolute;
+                    left: -42%;
+                    width: 40%;
+                    top:-12%;
+                    height: 670px;        
+                    background-color:#868686;
+                    transition: left 2s ;   
+                    text-align: center;       
+        }
+        #boite r{
+            position:absolute;
+            left: 8%;
+            top:1%;
+            font-size: 60px;
+        }
+        .menu a{
+            color: rgb(0, 255, 242);
+            font-size: 25px;           
+            text-decoration: none;
+               
+        }  
+        .menu {         
+                position:absolute;
+                left: 8%;
+                top:20%;
+                text-align: left;
+        }  
+        .menu a:hover{
+          background-color: rgba(255, 255, 255, 0.253);
+        }
+        #boite img{
+            height: 90px;
+            width: 170px;
+            position:absolute;
+            left: 25%;
+            top:60%;
+        }
+      
+   .contact { 
+   display: flex; 
+   flex-wrap: wrap;
+    gap: 50px; 
+    margin-top: 10px; 
+    position :absolute;
+    top:50%;
+    left:16%;
+    }
+.contact a { 
+background-color:#00ffc0 ; 
+padding:10px;  
+font-size: 30px; 
+  text-decoration: none;   
+  height: 100px;
+  width: 100px;
+  color: #ffffff;
+  }
+
+.contact a:hover { 
+background-color: black; 
+} 
+ 

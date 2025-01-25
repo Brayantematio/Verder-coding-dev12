@@ -1,0 +1,166 @@
+
+    body
+    {
+        background: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    header{
+      position: fixed;
+      z-index: 99999;
+      background-color: white;
+  width: 100%;
+      height: 80px;      
+      left: 2px;
+      top: 0;
+      left: 2px;
+          }
+         
+  #title h1{
+  color: blue;
+  font-size:25px;
+  font-style: italic;
+  font-family: verdana, geneva, arial, sans serif;
+  position:relative;
+  left:5%;
+  top: -10px;
+  text-decoration: none;
+  }
+  .navbar{
+  font-family:verdana, geneva, arial, sans serif;
+  position:absolute;
+  top:18%;
+  left:55%;
+  }
+  a{
+  font-size:15px;
+  text-decoration: none;
+  }
+  .navbar a{
+  float:right;
+  padding:10px;
+  text-decoration: none;
+  color: black;
+  font-size:15px;
+  }
+  .lien{
+  height: 80px;
+  }
+  .navbar a:hover{
+  color: rgb(0, 98, 255);
+  }
+  n{
+  font-size: 22px;
+  position: relative;;
+  left:20%;
+  top: 20px;
+  }
+  
+  #title h1:hover{
+  color: rgba(0, 0, 0, 0.568);
+  }   
+  #science{
+    left: -0.5%;
+    background-color:rgba(0, 0, 0, 0.157);
+    position: absolute;
+    top: 70px;
+    width: 1090px;
+    height: 300px;
+    font-size: 20px;
+   
+    }
+    #science h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }
+      #science img{
+        position: absolute;
+        top: 40px;
+        left: 60%;
+        border-radius: 15px;
+    }
+    #math{
+      left: -0.5%;
+      background-color:rgba(0, 0, 0, 0.445);
+      position: absolute;
+      top: 370px;
+      width: 1090px;
+      height: 300px;
+      font-size: 20px;
+     
+      }
+      #math h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }
+      #niveau1{
+        left: -0.5%;
+        background-color:rgba(0, 0, 0, 0.157);
+        position: absolute;
+        top: 670px;
+        width: 1090px;
+        height: 2000px;
+        font-size: 20px;
+      } 
+      #niveau1 h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }   
+      #niveau2{
+        left: -0.5%;
+        background-color:rgba(0, 0, 0, 0.192);
+        position: absolute;
+        top: 2660px;
+        width: 1090px;
+        height: 2150px;
+        font-size: 20px;
+       
+        }
+      #niveau2 h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }
+      #niveau3{
+        left: -0.5%;
+        background-color:rgba(0, 0, 0, 0.431);
+        position: absolute;
+        top: 4810px;
+        width: 1090px;
+        height: 2720px;
+        font-size: 20px;
+       
+        }
+      #niveau3 h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }
+      #niveau4{
+        left: -0.5%;
+        background-color:rgba(0, 0, 0, 0.191);
+        position: absolute;
+        top: 7530px;
+        width: 1090px;
+        height: 5390px;
+        font-size: 20px;
+       
+        }
+      #niveau4 h1{
+        position: relative;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+      }
